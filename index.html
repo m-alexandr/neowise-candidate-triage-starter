@@ -21,6 +21,7 @@
   <pre id="result" aria-live="polite"></pre>
   <script type="module">
     const form = document.querySelector("form");
+    const textareaInput = document.querySelector("#message");
     const result = document.querySelector("#result");
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -37,6 +38,7 @@
       } else if (data.status === "manual_review") {
         result.textContent = "Заявка требует ручного рассмотрения. Очистите предыдущий черновик.";
       } else {
+        textareaInput.value = '';
         result.textContent = "Ошибка: " + data.status;
       }
 })
