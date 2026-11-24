@@ -19,7 +19,7 @@ async function readText(req) {
 
 async function triage(text) {
   const timeout = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error("timeout")), 1000).unref()
+      setTimeout(() => reject(new Error("timeout")), 300).unref()
   );
 
   try {
