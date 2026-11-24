@@ -1,0 +1,10 @@
+{
+  "name": "neowise-candidate-triage",
+  "version": "1.0.0",
+  "description": "Тестовое задание для Neowise",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "node server.spec.mjs",
+    "start": "node server.mjs"
+  }
+}
